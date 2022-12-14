@@ -1,0 +1,127 @@
+/* 시티 박스 */
+.city_box {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 500px;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: none;
+}
+
+.city_box_btn_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.city_box_bn {
+  width: 90%;
+  height: 14%;
+  margin: 30px auto;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 10%;
+}
+
+.city_box_bn p {
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.city_box_seoul {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../../images/seoul_bn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.city_box_anyang-si {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../../images/anyang_bn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.city_box_daegu {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../../images/deagu_bn.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.city_box_busan {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../../images/busan_bn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.city_box_jeju {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../../images/jeju_bn.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* 시티 박스 버튼 이벤트 */
+
+.city_box.active {
+  display: block;
+  animation: open_move 1s forwards;
+}
+
+@keyframes open_move {
+  from {
+    transform: translate(-50%, -100%);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+.city_box.close {
+  display: block;
+  animation: close_move 1s forwards;
+}
+
+@keyframes close_move {
+  from {
+    transform: translate(-50%, 0);
+  }
+  to {
+    transform: translate(-50%, -100%);
+  }
+}

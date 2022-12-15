@@ -20,9 +20,16 @@ $(function () {
     $(".memo_box").addClass("active");
   });
 
-  $(".memo_box_btn_box i").on("click", function () {
+  $(".memo_box_btn_box i:first-child").on("click", function () {
     $(".memo_box").removeClass("active");
     $(".memo_box").addClass("close");
+  });
+
+  $(".memo_box_btn_box i:last-child").on("click", function () {
+    $(".memo_box").removeClass("active");
+    $(".memo_box").addClass("close");
+    $(".city_box").removeClass("close");
+    $(".city_box").addClass("active");
   });
 });
 
@@ -34,9 +41,16 @@ $(function () {
     $(".city_box").addClass("active");
   });
 
-  $(".city_box_btn_box i").on("click", function () {
+  $(".city_box_btn_box i:last-child").on("click", function () {
     $(".city_box").removeClass("active");
     $(".city_box").addClass("close");
+  });
+
+  $(".city_box_btn_box i:first-child").on("click", function () {
+    $(".city_box").removeClass("active");
+    $(".city_box").addClass("close");
+    $(".memo_box").removeClass("close");
+    $(".memo_box").addClass("active");
   });
 });
 

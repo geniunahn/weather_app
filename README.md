@@ -22,7 +22,7 @@
 
 # 기술 설명
 
-![1](https://user-images.githubusercontent.com/106502672/207807904-7409ef4f-3d6c-4cf3-95c8-147106ec7a92.jpg)
+![1](https://user-images.githubusercontent.com/106502672/207811624-f85972d6-8795-4641-82d7-a02bf2051268.jpg)
 ![2](https://user-images.githubusercontent.com/106502672/207807914-aa817e13-0f24-48be-91b9-2dff59918c53.jpg)
 ![3](https://user-images.githubusercontent.com/106502672/207807917-60366ebc-4622-400f-b537-638967f9b358.jpg)
 ![4](https://user-images.githubusercontent.com/106502672/207807921-d4e12775-170a-4e40-b334-6a284e4777ed.jpg)

@@ -31,7 +31,7 @@
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0 10px;
   transition: 0.4s;
 }
@@ -39,6 +39,7 @@
 .nav i {
   color: #fff;
   transition: 0.4s;
+  cursor: pointer;
 }
 
 /* 네비의 hover 이벤트 */

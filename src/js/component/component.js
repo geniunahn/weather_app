@@ -12,10 +12,24 @@ $(function () {
   });
 });
 
+// 메모 버튼 이벤트
+
+$(function () {
+  $(".nav i:first-child").on("click", function () {
+    $(".memo_box").removeClass("close");
+    $(".memo_box").addClass("active");
+  });
+
+  $(".memo_box_btn_box i").on("click", function () {
+    $(".memo_box").removeClass("active");
+    $(".memo_box").addClass("close");
+  });
+});
+
 // 시티 버튼 이벤트
 
 $(function () {
-  $(".nav i").on("click", function () {
+  $(".nav i:last-child").on("click", function () {
     $(".city_box").removeClass("close");
     $(".city_box").addClass("active");
   });
@@ -24,6 +38,64 @@ $(function () {
     $(".city_box").removeClass("active");
     $(".city_box").addClass("close");
   });
+});
+
+// 메모 이벤트
+$(function () {
+  const toDoForm = document.getElementById("todo-form");
+  const toDoInput = document.querySelector("#todo-form input");
+  const toDoList = document.getElementById("todo-list");
+
+  const TODOS_KEY = "todos";
+
+  let toDos = [];
+
+  function saveToDos() {
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
+  }
+
+  function deleteToDo(event) {
+    const li = event.target.parentElement.parentElement;
+    li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
+  }
+
+  function paintToDo(newTodo) {
+    const li = document.createElement("li");
+    li.id = newTodo.id;
+    const span = document.createElement("span");
+    span.innerText = newTodo.text;
+    const button = document.createElement("button");
+    button.innerHTML = `<i class="fa-solid fa-xmark fa-2x"></i>`;
+    button.addEventListener("click", deleteToDo);
+    li.appendChild(span);
+    li.appendChild(button);
+    toDoList.appendChild(li);
+  }
+
+  function handleToDoSubmit(event) {
+    event.preventDefault();
+    const newTodo = toDoInput.value;
+    toDoInput.value = "";
+    const newTodoObj = {
+      text: newTodo,
+      id: Date.now(),
+    };
+    toDos.push(newTodoObj);
+    paintToDo(newTodoObj);
+    saveToDos();
+  }
+
+  toDoForm.addEventListener("submit", handleToDoSubmit);
+
+  const savedToDos = localStorage.getItem(TODOS_KEY);
+
+  if (savedToDos !== null) {
+    const parsedToDos = JSON.parse(savedToDos);
+    toDos = parsedToDos;
+    parsedToDos.forEach(paintToDo);
+  }
 });
 
 $(function () {

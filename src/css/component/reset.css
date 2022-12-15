@@ -18,3 +18,7 @@ a {
   margin: 0 auto;
   padding: 0 10px 30px;
 }
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}

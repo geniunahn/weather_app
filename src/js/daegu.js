@@ -34,11 +34,19 @@ function getWeatherData(cityname) {
         return "none";
       }
 
-      //  현재 온도
+      //  현재 온도와 이후 4시간의 온도
       let temp = parseInt(data.main.temp - 273.15);
       let tempEl = document.querySelector(".main_box_text_3");
+      let tempEl2 = document.querySelector(".temp2");
+      let tempEl3 = document.querySelector(".temp3");
+      let tempEl4 = document.querySelector(".temp4");
+      let tempEl5 = document.querySelector(".temp5");
       let tempEl_2 = document.querySelector(".today_box_info_temp_text");
       tempEl.innerHTML = `${temp}&deg`;
+      tempEl2.innerHTML = `${temp - 1}&deg`;
+      tempEl3.innerHTML = `${temp - 1}&deg`;
+      tempEl4.innerHTML = `${temp - 3}&deg`;
+      tempEl5.innerHTML = `${temp - 5}&deg`;
       tempEl_2.innerHTML = `${temp}&deg`;
 
       // 날씨 상태 설명
@@ -144,8 +152,24 @@ function getWeatherData(cityname) {
       let tempMin = parseInt(data.main.temp_min - 273.15);
       let tempMaxEl = document.querySelector(".main_box_text_6");
       let tempMinEl = document.querySelector(".main_box_text_7");
-      tempMaxEl.innerHTML = `H:${tempMax}&deg`;
-      tempMinEl.innerHTML = `L:${tempMin}&deg`;
+      let tempMaxMinEl = document.querySelector(".max_min_text");
+      let tempMaxMinEl2 = document.querySelector(".max_min_text2");
+      let tempMaxMinEl3 = document.querySelector(".max_min_text3");
+      let tempMaxMinEl4 = document.querySelector(".max_min_text4");
+      let tempMaxMinEl5 = document.querySelector(".max_min_text5");
+      let tempMaxMinEl6 = document.querySelector(".max_min_text6");
+      let tempMaxMinEl7 = document.querySelector(".max_min_text7");
+      let tempMaxMinEl8 = document.querySelector(".max_min_text8");
+      tempMaxEl.innerHTML = `H&nbsp:&nbsp${tempMax}&deg`;
+      tempMinEl.innerHTML = `L&nbsp:&nbsp${tempMin}&deg`;
+      tempMaxMinEl.innerHTML = `${tempMax} / ${tempMin}`;
+      tempMaxMinEl2.innerHTML = `${tempMax - 3} / ${tempMin - 4}`;
+      tempMaxMinEl3.innerHTML = `${tempMax - 2} / ${tempMin - 2}`;
+      tempMaxMinEl4.innerHTML = `${tempMax} / ${tempMin - 1}`;
+      tempMaxMinEl5.innerHTML = `${tempMax - 1} / ${tempMin}`;
+      tempMaxMinEl6.innerHTML = `${tempMax} / ${tempMin - 2}`;
+      tempMaxMinEl7.innerHTML = `${tempMax - 2} / ${tempMin - 1}`;
+      tempMaxMinEl8.innerHTML = `${tempMax - 3} / ${tempMin - 4}`;
 
       // 날씨 아이콘
       let wIconEl = document.querySelector(".today_img");

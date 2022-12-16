@@ -27,3 +27,6 @@
 ![3](https://user-images.githubusercontent.com/106502672/207807917-60366ebc-4622-400f-b537-638967f9b358.jpg)
 ![4](https://user-images.githubusercontent.com/106502672/207807921-d4e12775-170a-4e40-b334-6a284e4777ed.jpg)
 ![5](https://user-images.githubusercontent.com/106502672/207807923-679cf55b-2000-4d13-9e47-97a74505dff0.jpg)
+
+# TO DO LIST
+- 반복되는 소스 줄이기  function aaa(addNum) { let asdf${addNum} } for(i...){  aaa(i)} 함수에 반복되는 소스를 넣고 매개변수를 숫자 위치에 넣는다. for 반복문으로 함수를 호출한다.

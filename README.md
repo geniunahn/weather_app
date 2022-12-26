@@ -1,18 +1,25 @@
 # 날씨 어플 프로젝트
 - 제작자 : 안정원
-- 날씨 어플 url : https://geniunahn.github.io/weather_app/
+- 깃허브 url
+- 프로젝트 url : https://geniunahn.github.io/weather_app/
 
-# 제작 목표
+# 제작 상황 및 목표
+- 제작 상황 :
+- 제작 목표 : 
 - 오픈웨더의 api를 이용하여 현대적인 아름다움과 실용성 두 가지를 모두 갖춘 날씨 어플을 만드는 것이 목표다.
 - 오픈웨더가 배포하는 무료 api는 당일의 날씨 정보를 한정적으로 제공하므로 현실감 있는 날씨 어플을 만들기 위한 소스가 부족한 상황이다. 이러한 문제를 극복하기 위하여 자바스크립의 기능을 활용한 다양한 연출로 극복하는 것에 초점을 맞추었다.
 
-# 기술 설명
+# 디자인 및 적용기술 설명
 
 ![1](https://user-images.githubusercontent.com/106502672/207811624-f85972d6-8795-4641-82d7-a02bf2051268.jpg)
 ![2](https://user-images.githubusercontent.com/106502672/207807914-aa817e13-0f24-48be-91b9-2dff59918c53.jpg)
 ![3](https://user-images.githubusercontent.com/106502672/207807917-60366ebc-4622-400f-b537-638967f9b358.jpg)
 ![4](https://user-images.githubusercontent.com/106502672/207807921-d4e12775-170a-4e40-b334-6a284e4777ed.jpg)
 ![5](https://user-images.githubusercontent.com/106502672/207807923-679cf55b-2000-4d13-9e47-97a74505dff0.jpg)
+
+
+# 제작 과정에서의 문제와 극복 과정
+-
 
 # 개발자 노트
 # 12월 14일
@@ -30,3 +37,5 @@
 
 # TO DO LIST
 - 반복되는 소스 줄이기  function aaa(addNum) { let asdf${addNum} } for(i...){  aaa(i)} 함수에 반복되는 소스를 넣고 매개변수를 숫자 위치에 넣는다. for 반복문으로 함수를 호출한다.
+
+

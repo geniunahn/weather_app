@@ -15,9 +15,7 @@
 ![3](https://user-images.githubusercontent.com/106502672/207807917-60366ebc-4622-400f-b537-638967f9b358.jpg)
 ![4](https://user-images.githubusercontent.com/106502672/207807921-d4e12775-170a-4e40-b334-6a284e4777ed.jpg)
 ![5](https://user-images.githubusercontent.com/106502672/210081808-96fa6955-a3e7-4e00-9152-bd23f1ee0503.jpg)
-![6](https://user-images.githubusercontent.com/106502672/210081812-521c0175-b905-42d6-9f04-a59ed287eba1.jpg)
-
-
+![6](https://user-images.githubusercontent.com/106502672/210081973-d7cb8705-5993-4661-8604-527820d53fa8.jpg)
 
 # 제작 과정에서의 문제와 극복 과정
 - 필자를 괴롭힌 문제는 자신이 만든 소스가 비효율적이라는 자각이었다. 필자는 오픈웨더의 API를 활용하는 과정에서 필요 이상으로 긴 과정을 거쳐 사용한다는 느낌을 지울수가 없었다. 그런데문제는 자각을 하면서도 그것을 극복할 방법을 바로 떠올릴 수 없었다는 것이다. 자바스크립, 제이쿼리로 소스를 만들면서 스스로에게 '정말 말도 안 되게 무식하게 소스를 만들고 있다'는 한탄을 자주 했다.

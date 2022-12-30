@@ -1,6 +1,6 @@
 # 날씨 어플 프로젝트
 - 제작자 : 안정원
-- 깃허브 url
+- 깃허브 url : https://github.com/geniunahn/weather_app
 - 프로젝트 url : https://geniunahn.github.io/weather_app/
 
 # 제작 상황 및 목표

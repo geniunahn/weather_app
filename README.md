@@ -14,7 +14,9 @@
 ![2](https://user-images.githubusercontent.com/106502672/207807914-aa817e13-0f24-48be-91b9-2dff59918c53.jpg)
 ![3](https://user-images.githubusercontent.com/106502672/207807917-60366ebc-4622-400f-b537-638967f9b358.jpg)
 ![4](https://user-images.githubusercontent.com/106502672/207807921-d4e12775-170a-4e40-b334-6a284e4777ed.jpg)
-![5](https://user-images.githubusercontent.com/106502672/207807923-679cf55b-2000-4d13-9e47-97a74505dff0.jpg)
+![5](https://user-images.githubusercontent.com/106502672/210081808-96fa6955-a3e7-4e00-9152-bd23f1ee0503.jpg)
+![6](https://user-images.githubusercontent.com/106502672/210081812-521c0175-b905-42d6-9f04-a59ed287eba1.jpg)
+
 
 
 # 제작 과정에서의 문제와 극복 과정

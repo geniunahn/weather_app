@@ -153,23 +153,25 @@ function getWeatherData(cityname) {
       let tempMaxEl = document.querySelector(".main_box_text_6");
       let tempMinEl = document.querySelector(".main_box_text_7");
       let tempMaxMinEl = document.querySelector(".max_min_text");
-      let tempMaxMinEl2 = document.querySelector(".max_min_text2");
-      let tempMaxMinEl3 = document.querySelector(".max_min_text3");
-      let tempMaxMinEl4 = document.querySelector(".max_min_text4");
-      let tempMaxMinEl5 = document.querySelector(".max_min_text5");
-      let tempMaxMinEl6 = document.querySelector(".max_min_text6");
-      let tempMaxMinEl7 = document.querySelector(".max_min_text7");
-      let tempMaxMinEl8 = document.querySelector(".max_min_text8");
       tempMaxEl.innerHTML = `H&nbsp:&nbsp${tempMax}&deg`;
       tempMinEl.innerHTML = `L&nbsp:&nbsp${tempMin}&deg`;
       tempMaxMinEl.innerHTML = `${tempMax} / ${tempMin}`;
-      tempMaxMinEl2.innerHTML = `${tempMax - 3} / ${tempMin - 4}`;
-      tempMaxMinEl3.innerHTML = `${tempMax - 2} / ${tempMin - 2}`;
-      tempMaxMinEl4.innerHTML = `${tempMax} / ${tempMin - 1}`;
-      tempMaxMinEl5.innerHTML = `${tempMax - 1} / ${tempMin}`;
-      tempMaxMinEl6.innerHTML = `${tempMax} / ${tempMin - 2}`;
-      tempMaxMinEl7.innerHTML = `${tempMax - 2} / ${tempMin - 1}`;
-      tempMaxMinEl8.innerHTML = `${tempMax - 3} / ${tempMin - 4}`;
+
+      let tempMaxVari = [0, 0, 3, 2, 0, 1, 0, 2, 3];
+      let tempminVari = [0, 0, 4, 2, 1, 0, 2, 1, 4];
+
+      function tempTest() {
+        for (let i = 2; i < 9; i++) {
+          let tempMax = parseInt(data.main.temp_max - 273.15);
+          let tempMin = parseInt(data.main.temp_min - 273.15);
+          let tempMaxMinEl = document.querySelector(`.max_min_text${i}`);
+          tempMaxMinEl.innerHTML = `${tempMax - tempMaxVari[i]} / ${
+            tempMin - tempminVari[i]
+          }`;
+        }
+      }
+
+      tempTest();
 
       // 날씨 아이콘
       let wIconEl = document.querySelector(".today_img");

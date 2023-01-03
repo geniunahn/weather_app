@@ -185,100 +185,21 @@ $(function () {
       "토요일",
     ];
 
-    // 1번
-    let addNum1 = 1;
-    let addDname1 = dname + addNum1;
-
-    if (addDname1 >= 7) {
-      addDname1 = dname + addNum1 - 7;
+    function dayName(dname) {
+      for (let i = 1; i < 8; i++) {
+        let addNum = i;
+        let addDname = dname + addNum;
+        if (addDname >= 7) {
+          addDname = dname + addNum - 7;
+        }
+        let weekDname = week[addDname];
+        let dnameEL = document.querySelector(`.dname${i}`);
+        dnameEL.innerHTML = weekDname;
+        let dnameEL2 = document.querySelector(`.dname${i}_1`);
+        dnameEL2.innerHTML = weekDname;
+      }
     }
-
-    let weekDname1 = week[addDname1];
-    let dnameEL1 = document.querySelector(".dname1");
-    dnameEL1.innerHTML = weekDname1;
-    let dnameEL1_1 = document.querySelector(".dname1_1");
-    dnameEL1_1.innerHTML = weekDname1;
-
-    // 2번
-    let addNum2 = 2;
-    let addDname2 = dname + addNum2;
-
-    if (addDname2 >= 7) {
-      addDname2 = dname + addNum2 - 7;
-    }
-
-    let weekDname2 = week[addDname2];
-    let dnameEL2 = document.querySelector(".dname2");
-    dnameEL2.innerHTML = weekDname2;
-    let dnameEL2_1 = document.querySelector(".dname2_1");
-    dnameEL2_1.innerHTML = weekDname2;
-
-    // 3번
-    let addNum3 = 3;
-    let addDname3 = dname + addNum3;
-
-    if (addDname3 >= 7) {
-      addDname3 = dname + addNum3 - 7;
-    }
-
-    let weekDname3 = week[addDname3];
-    let dnameEL3 = document.querySelector(".dname3");
-    dnameEL3.innerHTML = weekDname3;
-    let dnameEL3_1 = document.querySelector(".dname3_1");
-    dnameEL3_1.innerHTML = weekDname3;
-
-    // 4번
-    let addNum4 = 4;
-    let addDname4 = dname + addNum4;
-
-    if (addDname4 >= 7) {
-      addDname4 = dname + addNum4 - 7;
-    }
-    let weekDname4 = week[addDname4];
-    let dnameEL4 = document.querySelector(".dname4");
-    dnameEL4.innerHTML = weekDname4;
-    let dnameEL4_1 = document.querySelector(".dname4_1");
-    dnameEL4_1.innerHTML = weekDname4;
-
-    // 5번
-    let addNum5 = 5;
-    let addDname5 = dname + addNum5;
-
-    if (addDname5 >= 7) {
-      addDname5 = dname + addNum5 - 7;
-    }
-    let weekDname5 = week[addDname5];
-    let dnameEL5 = document.querySelector(".dname5");
-    dnameEL5.innerHTML = weekDname5;
-    let dnameEL5_1 = document.querySelector(".dname5_1");
-    dnameEL5_1.innerHTML = weekDname5;
-
-    // 6번
-    let addNum6 = 6;
-    let addDname6 = dname + addNum6;
-
-    if (addDname6 >= 7) {
-      addDname6 = dname + addNum6 - 7;
-    }
-    let weekDname6 = week[addDname6];
-    let dnameEL6 = document.querySelector(".dname6");
-    dnameEL6.innerHTML = weekDname6;
-    let dnameEL6_1 = document.querySelector(".dname6_1");
-    dnameEL6_1.innerHTML = weekDname6;
-
-    // 7번
-    let addNum7 = 7;
-    let addDname7 = dname + addNum7;
-
-    if (addDname7 >= 7) {
-      addDname7 = dname + addNum7 - 7;
-    }
-    let weekDname7 = week[addDname7];
-    let dnameEL7 = document.querySelector(".dname7");
-    dnameEL7.innerHTML = weekDname7;
-    let dnameEL7_1 = document.querySelector(".dname7_1");
-    dnameEL7_1.innerHTML = weekDname7;
+    dayName(dname);
   }
-
   Clock();
 });
